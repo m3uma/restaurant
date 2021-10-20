@@ -58,6 +58,10 @@
   src: url("../fonts/TrendRoughSansOne.otf");
 }
 
+#bootstrap-override .navbar {
+  background: black;
+}
+
 #bootstrap-override .navbar .navbar-brand {
   margin-left: 20px;
 }
@@ -100,7 +104,7 @@
     transition: color 0.5s ease-out;
     text-align: right;
     font-size: 25px;
-    font-family: FactoriaBook;
+    font-family: FactoriaMedium;
     padding: 10px;
   }
 }
@@ -111,7 +115,103 @@
   }
 }
 
+@font-face {
+  font-family: FactoriaBold;
+  src: url("../fonts/Factoria-Bold.otf");
+}
+
+@font-face {
+  font-family: FactoriaBook;
+  src: url("../fonts/Factoria-Book.otf");
+}
+
+@font-face {
+  font-family: FactoriaMedium;
+  src: url("../fonts/Factoria-Medium.otf");
+}
+
+@font-face {
+  font-family: HanleyRoughScript;
+  src: url("../fonts/HanleyRough-Script.otf");
+}
+
+@font-face {
+  font-family: TrendRoughSansFive;
+  src: url("../fonts/TrendRoughSansFive.otf");
+}
+
+@font-face {
+  font-family: TrendRoughSansOne;
+  src: url("../fonts/TrendRoughSansOne.otf");
+}
+
+#bootstrap-override .order {
+  background-image: url("../../img/desktop/cutiepies-pizza-1.jpg");
+  background-size: cover;
+  background-position: right;
+  height: 90vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#bootstrap-override .order .content {
+  text-align: right;
+  margin-right: 90px;
+  width: 400px;
+}
+
+#bootstrap-override .order .content h1 {
+  color: white;
+  font-family: TrendRoughSansOne;
+  font-size: 50px;
+  margin-bottom: 25px;
+}
+
+#bootstrap-override .order .content span {
+  color: #9f554a;
+  font-family: FactoriaMedium;
+  font-size: 30px;
+}
+
+#bootstrap-override .order .content button {
+  margin-top: 35px;
+}
+
+#bootstrap-override .order .content button a {
+  color: #9f554a;
+  border: solid 2px #9f554a;
+  border-radius: 30px;
+  font-size: 20px;
+  font-family: FactoriaBook;
+  padding: 7px 50px 10px;
+  text-decoration: none;
+  -webkit-transition: background 0.2s ease-out;
+  transition: background 0.2s ease-out;
+}
+
+#bootstrap-override .order .content button a:hover {
+  background: white;
+  border: solid 2px white;
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
 body {
   height: 100vh;
+  font-family: FactoriaBold;
+  font-size: 17px;
 }
 /*# sourceMappingURL=style.css.map */

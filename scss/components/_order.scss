@@ -4,5 +4,51 @@
 #bootstrap-override {
     .order {
         background-image: url('../../img/desktop/cutiepies-pizza-1.jpg');
+        background-size: cover;
+        background-position: right;
+        height: 90vh;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .content {
+            text-align: right;
+            margin-right: 90px;
+            width: 400px;
+
+            h1 {
+                color: $thirdColor;
+                font-family: TrendRoughSansOne;
+                font-size: 50px;
+                margin-bottom: 25px;
+            }
+    
+            span {
+                color: $primaryColor;
+                font-family: FactoriaMedium;
+                font-size: 30px;
+            }
+    
+            button {
+                margin-top: 35px;
+
+                a {
+                    color: $primaryColor;
+                    border: solid 2px $primaryColor;
+                    border-radius: 30px;
+                    font-size: 20px;
+                    font-family: FactoriaBook;
+                    padding: 7px 50px 10px;
+                    text-decoration: none;
+                    transition: background 0.2s ease-out;
+
+                    &:hover {
+                        background: $thirdColor;
+                        border: solid 2px $thirdColor;
+                    }
+                }
+            }
+        }
     }
 }
