@@ -71,6 +71,47 @@
 }
 
 #bootstrap-override .navbar .nav-link:hover {
-  color: #d9c7bd;
+  color: white;
+}
+
+@media (max-width: 992px) {
+  #bootstrap-override .navbar {
+    padding-bottom: 20px;
+  }
+  #bootstrap-override .navbar .navbar-brand img {
+    width: 50%;
+  }
+  #bootstrap-override .navbar .navbar-toggler {
+    margin-right: 50px;
+    border: none;
+    color: #9f554a;
+  }
+  #bootstrap-override .navbar .navbar-toggler .my-navbar-toggler-icon img {
+    width: 25px;
+  }
+  #bootstrap-override .navbar .navbar-nav {
+    background-color: #9f554a;
+    margin: 10px 5% 0;
+  }
+  #bootstrap-override .navbar .navbar-nav .nav-link {
+    color: white;
+    margin-right: 15px;
+    -webkit-transition: color 0.5s ease-out;
+    transition: color 0.5s ease-out;
+    text-align: right;
+    font-size: 25px;
+    font-family: FactoriaBook;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  #bootstrap-override .navbar .navbar-toggler {
+    margin-right: 20px;
+  }
+}
+
+body {
+  height: 100vh;
 }
 /*# sourceMappingURL=style.css.map */
