@@ -1,6 +1,15 @@
 @import './settings/fonts';
 @import './components/navbar';
+@import './components/order';
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
 
 body {
     height: 100vh;
+    font-family: FactoriaBold;
+    font-size: 17px;
 }
