@@ -1,0 +1,19 @@
+@import './fonts';
+
+#bootstrap-override {
+    .navbar {
+        .navbar-brand {
+            margin-left: 20px;
+        }
+        .nav-link {
+            color: #9f554a;
+            font-family: FactoriaBold;
+            margin-right: 15px;
+            transition: color 0.5s ease-out;
+
+            &:hover {
+                color: #d9c7bd;
+            }
+        }
+    }
+}

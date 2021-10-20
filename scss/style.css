@@ -1,0 +1,76 @@
+@font-face {
+  font-family: FactoriaBold;
+  src: url("../fonts/Factoria-Bold.otf");
+}
+
+@font-face {
+  font-family: FactoriaBook;
+  src: url("../fonts/Factoria-Book.otf");
+}
+
+@font-face {
+  font-family: FactoriaMedium;
+  src: url("../fonts/Factoria-Medium.otf");
+}
+
+@font-face {
+  font-family: HanleyRoughScript;
+  src: url("../fonts/HanleyRough-Script.otf");
+}
+
+@font-face {
+  font-family: TrendRoughSansFive;
+  src: url("../fonts/TrendRoughSansFive.otf");
+}
+
+@font-face {
+  font-family: TrendRoughSansOne;
+  src: url("../fonts/TrendRoughSansOne.otf");
+}
+
+@font-face {
+  font-family: FactoriaBold;
+  src: url("../fonts/Factoria-Bold.otf");
+}
+
+@font-face {
+  font-family: FactoriaBook;
+  src: url("../fonts/Factoria-Book.otf");
+}
+
+@font-face {
+  font-family: FactoriaMedium;
+  src: url("../fonts/Factoria-Medium.otf");
+}
+
+@font-face {
+  font-family: HanleyRoughScript;
+  src: url("../fonts/HanleyRough-Script.otf");
+}
+
+@font-face {
+  font-family: TrendRoughSansFive;
+  src: url("../fonts/TrendRoughSansFive.otf");
+}
+
+@font-face {
+  font-family: TrendRoughSansOne;
+  src: url("../fonts/TrendRoughSansOne.otf");
+}
+
+#bootstrap-override .navbar .navbar-brand {
+  margin-left: 20px;
+}
+
+#bootstrap-override .navbar .nav-link {
+  color: #9f554a;
+  font-family: FactoriaBold;
+  margin-right: 15px;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+#bootstrap-override .navbar .nav-link:hover {
+  color: #d9c7bd;
+}
+/*# sourceMappingURL=style.css.map */
