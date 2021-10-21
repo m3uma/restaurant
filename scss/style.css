@@ -208,7 +208,7 @@
     height: 100vh;
   }
   #bootstrap-override .order .bcground--mobile {
-    background-image: url("../../img/mobile/cutiepies-pizza-1-xs.jpg");
+    background-image: url("../img/mobile/cutiepies-pizza-1-xs.jpg");
     background-size: cover;
     background-position: bottom;
     height: 35%;
