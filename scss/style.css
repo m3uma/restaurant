@@ -202,6 +202,30 @@
   border: solid 2px white;
 }
 
+@media (max-width: 768px) {
+  #bootstrap-override .order {
+    background: #242426;
+    height: 100vh;
+  }
+  #bootstrap-override .order .bcground--mobile {
+    background-image: url("../../img/mobile/cutiepies-pizza-1-xs.jpg");
+    background-size: cover;
+    background-position: bottom;
+    height: 35%;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+  }
+  #bootstrap-override .order .content {
+    text-align: center;
+    width: 100vw;
+    margin: 0;
+  }
+  #bootstrap-override .order .content h1 {
+    margin-top: 200px;
+  }
+}
+
 #bootstrap-override .carousel-item .col-md-4 .card {
   margin: -2px;
 }
