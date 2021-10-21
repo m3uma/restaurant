@@ -1,0 +1,84 @@
+@import '../settings/variables';
+
+
+#bootstrap-override {
+    .carousel-item {
+        .col-md-4 {
+            .card {
+                margin: -2px;
+
+                .card-img {
+                    margin: -1px;
+                }
+            }
+        }
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+        width: 75px;
+        margin: 0;
+        padding: 0;
+        
+        .carousel-control-prev-ico, .carousel-control-next-ico {
+            background: $primaryColor;
+            width: 50px;
+            height: 50px;
+            margin: 0;
+            padding: 0;
+
+            img {
+                width: 50px;
+                height: 50px;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@media (max-width: $md) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(100%);
+      transition-duration: 1s;
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-100%);
+      transition-duration: 1s;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+@media (min-width: $md) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.33%);
+      transition-duration: 1s;
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.33%);
+      transition-duration: 1s;
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+
+}

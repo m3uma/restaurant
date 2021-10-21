@@ -202,6 +202,88 @@
   border: solid 2px white;
 }
 
+#bootstrap-override .carousel-item .col-md-4 .card {
+  margin: -2px;
+}
+
+#bootstrap-override .carousel-item .col-md-4 .card .card-img {
+  margin: -1px;
+}
+
+#bootstrap-override .carousel-control-prev, #bootstrap-override .carousel-control-next {
+  width: 75px;
+  margin: 0;
+  padding: 0;
+}
+
+#bootstrap-override .carousel-control-prev .carousel-control-prev-ico, #bootstrap-override .carousel-control-prev .carousel-control-next-ico, #bootstrap-override .carousel-control-next .carousel-control-prev-ico, #bootstrap-override .carousel-control-next .carousel-control-next-ico {
+  background: #9f554a;
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+#bootstrap-override .carousel-control-prev .carousel-control-prev-ico img, #bootstrap-override .carousel-control-prev .carousel-control-next-ico img, #bootstrap-override .carousel-control-next .carousel-control-prev-ico img, #bootstrap-override .carousel-control-next .carousel-control-next-ico img {
+  width: 50px;
+  height: 50px;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .carousel-inner .carousel-item > div {
+    display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+  }
+  .carousel-inner .carousel-item-start.active,
+  .carousel-inner .carousel-item-prev {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    -webkit-transform: translateX(33.33%);
+            transform: translateX(33.33%);
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+  }
+  .carousel-inner .carousel-item-start.active,
+  .carousel-inner .carousel-item-prev {
+    -webkit-transform: translateX(-33.33%);
+            transform: translateX(-33.33%);
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+  }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
 *, *::after, *::before {
   margin: 0;
   padding: 0;
