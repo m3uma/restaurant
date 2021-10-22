@@ -205,7 +205,8 @@
 @media (max-width: 768px) {
   #bootstrap-override .order {
     background: #242426;
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
   }
   #bootstrap-override .order .bcground--mobile {
     background-image: url("../img/mobile/cutiepies-pizza-1-xs.jpg");
@@ -308,6 +309,118 @@
           transform: translateX(0);
 }
 
+@font-face {
+  font-family: FactoriaBold;
+  src: url("../fonts/Factoria-Bold.otf");
+}
+
+@font-face {
+  font-family: FactoriaBook;
+  src: url("../fonts/Factoria-Book.otf");
+}
+
+@font-face {
+  font-family: FactoriaMedium;
+  src: url("../fonts/Factoria-Medium.otf");
+}
+
+@font-face {
+  font-family: HanleyRoughScript;
+  src: url("../fonts/HanleyRough-Script.otf");
+}
+
+@font-face {
+  font-family: TrendRoughSansFive;
+  src: url("../fonts/TrendRoughSansFive.otf");
+}
+
+@font-face {
+  font-family: TrendRoughSansOne;
+  src: url("../fonts/TrendRoughSansOne.otf");
+}
+
+#bootstrap-override .menu {
+  background-image: url("../img/desktop/cutiepies-pizza-2.jpg");
+  background-size: cover;
+  background-position: left;
+  height: 90vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#bootstrap-override .menu .content__menu {
+  text-align: left;
+  margin-left: 90px;
+  width: 400px;
+}
+
+#bootstrap-override .menu .content__menu h1 {
+  color: white;
+  font-family: HanleyRoughScript;
+  font-size: 50px;
+  margin-bottom: 25px;
+}
+
+#bootstrap-override .menu .content__menu span {
+  color: #9f554a;
+  font-family: FactoriaMedium;
+  font-size: 30px;
+}
+
+#bootstrap-override .menu .content__menu button {
+  margin-top: 35px;
+}
+
+#bootstrap-override .menu .content__menu button a {
+  color: #9f554a;
+  border: solid 2px #9f554a;
+  border-radius: 30px;
+  font-size: 20px;
+  font-family: FactoriaBook;
+  padding: 7px 50px 10px;
+  text-decoration: none;
+  -webkit-transition: background 0.2s ease-out;
+  transition: background 0.2s ease-out;
+}
+
+#bootstrap-override .menu .content__menu button a:hover {
+  background: white;
+  border: solid 2px white;
+}
+
+@media (max-width: 768px) {
+  #bootstrap-override .menu {
+    background: #242426;
+    min-height: 100vh;
+    height: 100%;
+  }
+  #bootstrap-override .menu .bcground__menu--mobile {
+    background-image: url("../../img/mobile/cutiepies-pizza-2-xs.jpg");
+    background-size: cover;
+    background-position: bottom;
+    height: 35%;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+  }
+  #bootstrap-override .menu .content__menu {
+    text-align: center;
+    width: 100vw;
+    margin: 0;
+  }
+  #bootstrap-override .menu .content__menu h1 {
+    margin-top: 200px;
+  }
+}
+
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -323,5 +436,6 @@ html, body {
   overflow-x: hidden;
   font-family: FactoriaBold;
   font-size: 17px;
+  scroll-behavior: smooth;
 }
 /*# sourceMappingURL=style.css.map */
