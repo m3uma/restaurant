@@ -540,42 +540,18 @@
   }
 }
 
-@font-face {
-  font-family: FactoriaBold;
-  src: url("../fonts/Factoria-Bold.otf");
-}
-
-@font-face {
-  font-family: FactoriaBook;
-  src: url("../fonts/Factoria-Book.otf");
-}
-
-@font-face {
-  font-family: FactoriaMedium;
-  src: url("../fonts/Factoria-Medium.otf");
-}
-
-@font-face {
-  font-family: HanleyRoughScript;
-  src: url("../fonts/HanleyRough-Script.otf");
-}
-
-@font-face {
-  font-family: TrendRoughSansFive;
-  src: url("../fonts/TrendRoughSansFive.otf");
-}
-
-@font-face {
-  font-family: TrendRoughSansOne;
-  src: url("../fonts/TrendRoughSansOne.otf");
-}
-
 #bootstrap-override .cheese {
   background-image: url("../img/desktop/cheese-background.jpg");
   background-position: top;
   background-size: cover;
   width: 100vw;
   height: 200px;
+}
+
+@media (max-width: 576px) {
+  #bootstrap-override .cheese {
+    height: 80vw;
+  }
 }
 
 *, *::after, *::before {
