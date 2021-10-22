@@ -1,0 +1,12 @@
+@import '../settings/fonts';
+@import '../settings/variables';
+
+#bootstrap-override {
+    .cheese {
+        background-image: url('../img/desktop/cheese-background.jpg'); 
+        background-position: top;
+        background-size: cover;
+        width: 100vw;
+        height: 200px;
+    }
+}
