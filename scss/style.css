@@ -403,7 +403,7 @@
     height: 100%;
   }
   #bootstrap-override .menu .bcground__menu--mobile {
-    background-image: url("../../img/mobile/cutiepies-pizza-2-xs.jpg");
+    background-image: url("../img/mobile/cutiepies-pizza-2-xs.jpg");
     background-size: cover;
     background-position: bottom;
     height: 35%;
@@ -551,6 +551,112 @@
 @media (max-width: 576px) {
   #bootstrap-override .cheese {
     height: 80vw;
+  }
+}
+
+@font-face {
+  font-family: FactoriaBold;
+  src: url("../fonts/Factoria-Bold.otf");
+}
+
+@font-face {
+  font-family: FactoriaBook;
+  src: url("../fonts/Factoria-Book.otf");
+}
+
+@font-face {
+  font-family: FactoriaMedium;
+  src: url("../fonts/Factoria-Medium.otf");
+}
+
+@font-face {
+  font-family: HanleyRoughScript;
+  src: url("../fonts/HanleyRough-Script.otf");
+}
+
+@font-face {
+  font-family: TrendRoughSansFive;
+  src: url("../fonts/TrendRoughSansFive.otf");
+}
+
+@font-face {
+  font-family: TrendRoughSansOne;
+  src: url("../fonts/TrendRoughSansOne.otf");
+}
+
+#bootstrap-override .drinks {
+  background-image: url("../img/desktop/cutiepies-drinks.jpg");
+  background-size: cover;
+  background-position: left;
+  height: 90vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#bootstrap-override .drinks .content__drinks {
+  text-align: left;
+  margin-left: 90px;
+  width: 400px;
+}
+
+#bootstrap-override .drinks .content__drinks h1 {
+  color: white;
+  font-family: TrendRoughSansOne;
+  font-size: 50px;
+  margin-bottom: 25px;
+}
+
+#bootstrap-override .drinks .content__drinks p {
+  color: #666;
+  font-family: FactoriaMedium;
+  font-size: 20px;
+}
+
+#bootstrap-override .drinks .content__drinks button {
+  padding-left: 0;
+}
+
+#bootstrap-override .drinks .content__drinks button a {
+  color: #666;
+  border: solid 2px #666;
+  border-radius: 30px;
+  font-size: 20px;
+  font-family: FactoriaBook;
+  padding: 7px 50px 10px;
+  text-decoration: none;
+  -webkit-transition: background 0.2s ease-out;
+  transition: background 0.2s ease-out;
+}
+
+#bootstrap-override .drinks .content__drinks button a:hover {
+  background: white;
+  border: solid 2px white;
+}
+
+@media (max-width: 768px) {
+  #bootstrap-override .drinks {
+    background-image: url("../img/mobile/cutiepies-drinks-mobile.jpg");
+    min-height: 100vh;
+    height: 100%;
+    background-size: auto;
+    background-position: top;
+  }
+  #bootstrap-override .drinks .content__drinks {
+    text-align: center;
+    width: 100vw;
+    margin: 0;
+    margin-top: -50px;
+  }
+  #bootstrap-override .drinks .content__drinks h1 {
+    font-family: TrendRoughSansFive;
   }
 }
 
