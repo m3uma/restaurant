@@ -57,7 +57,8 @@
     #bootstrap-override {
         .order {
             background: $grey;
-            height: 100vh;
+            min-height: 100vh;
+            height: 100%;
 
             .bcground--mobile {
                 background-image: url('../img/mobile/cutiepies-pizza-1-xs.jpg');
