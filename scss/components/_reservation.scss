@@ -1,0 +1,95 @@
+@import '../settings/fonts';
+@import '../settings/variables';
+
+#bootstrap-override {
+    .reservation { 
+        background: $lightGrey;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .reservation__img {
+            padding: 0;
+            height: 100%;
+            min-height: 400px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .content__reservation {
+            text-align: left;
+            margin: 0;
+            height: 100%;
+            min-height: 300px;
+            padding: 0;
+
+            h1 {
+                color: $thirdColor;
+                font-family: TrendRoughSansOne;
+                font-size: 50px;
+                margin: 0 0 25px 70px;
+            }
+    
+            p {
+                color: $thirdColor;
+                font-family: FactoriaBook;
+                font-size: 20px;
+                margin-left: 70px;
+            }
+    
+            button {
+                margin-left: 60px;
+
+                a {
+                    color: $thirdColor;
+                    border: solid 2px $thirdColor;
+                    border-radius: 30px;
+                    font-size: 18px;
+                    font-family: FactoriaBook;
+                    padding: 7px 50px 10px;
+                    text-decoration: none;
+                    transition: background 0.2s ease-out;
+
+                    &:hover {
+                        background: $thirdColor;
+                        border: solid 2px $thirdColor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $lg) {
+    #bootstrap-override {
+        .reservation {
+            height: 100%;
+            
+            .content__reservation {
+                text-align: center;
+                width: 100vw;
+                margin: 0;
+                padding: 20px 0;
+
+                h1, p, button {
+                    margin: 0;
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    #bootstrap-override {
+        .reservation {        
+            .content__reservation {
+                margin-top: -150px;
+            }
+
+        }
+    }
+}
