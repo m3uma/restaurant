@@ -2,6 +2,7 @@
 @import './components/navbar';
 @import './components/order';
 @import './components/carousel';
+@import './components/menu';
 
 *, *::after, *::before{
     margin: 0;
@@ -17,4 +18,5 @@ html,body {
     overflow-x: hidden; 
     font-family: FactoriaBold;
     font-size: 17px;
+    scroll-behavior: smooth;
 }
