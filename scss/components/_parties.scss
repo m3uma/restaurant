@@ -1,0 +1,100 @@
+@import '../settings/fonts';
+@import '../settings/variables';
+
+#bootstrap-override {
+    .parties { 
+        background: $primaryColor;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .parties__img {
+            padding: 0;
+            height: 100%;
+            min-height: 400px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .content__parties {
+            text-align: right;
+            margin: 0;
+            height: 100%;
+            min-height: 300px;
+            padding: 0;
+
+            h1 {
+                color: $thirdColor;
+                font-family: TrendRoughSansOne;
+                font-size: 50px;
+                margin: 0 7% 25px 0;
+            }
+    
+            p {
+                color: $thirdColor;
+                font-family: FactoriaBook;
+                font-size: 20px;
+                margin-right: 7%;
+            }
+    
+            button {
+                margin-right: 6%;
+
+                a {
+                    color: $thirdColor;
+                    border: solid 2px $thirdColor;
+                    border-radius: 30px;
+                    font-size: 18px;
+                    font-family: FactoriaBook;
+                    padding: 7px 50px 10px;
+                    text-decoration: none;
+                    transition: background 0.2s ease-out;
+
+                    &:hover {
+                        background: $thirdColor;
+                        border: solid 2px $thirdColor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $lg) {
+    #bootstrap-override {
+        .parties {
+            height: 100%;
+            flex-direction: column-reverse;
+            
+            .content__parties {
+                text-align: center;
+                width: 100vw;
+                margin: 0;
+                padding: 20px 0;
+
+                h1, p, button {
+                    margin: 0;
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    #bootstrap-override {
+        .parties {        
+            .content__parties {
+                margin-top: -150px;
+
+                h1 {
+                    font-size: 40px;
+                }
+            }
+
+        }
+    }
+}
