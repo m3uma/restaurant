@@ -1,0 +1,79 @@
+@import '../settings/fonts';
+@import '../settings/variables';
+
+#bootstrap-override {
+    .story { 
+        background: $lightGrey;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .story__img {
+            padding: 0;
+            height: 100%;
+            min-height: 400px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .content__story {
+            text-align: left;
+            margin: 0;
+            height: 100%;
+            min-height: 300px;
+            padding: 0;
+            width: 40%;
+            
+
+            h1 {
+                color: $thirdColor;
+                font-family: TrendRoughSansFive;
+                font-size: 50px;
+                margin: 0 0 25px 7%;
+            }
+    
+            p {
+                color: $thirdColor;
+                font-family: FactoriaBook;
+                font-size: 20px;
+                margin-left: 7%;
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media (max-width: $lg) {
+    #bootstrap-override {
+        .story {
+            height: 100%;
+            
+            .content__story {
+                text-align: center;
+                width: 100vw;
+                margin: 0;
+                padding: 20px 0;
+
+                h1, p {
+                    margin: 0 auto;
+                    width: 90%;
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    #bootstrap-override {
+        .story {        
+            .content__story {
+                margin-top: -150px;
+            }
+
+        }
+    }
+}
