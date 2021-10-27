@@ -1,0 +1,97 @@
+@import '../settings/fonts';
+@import '../settings/variables';
+
+#bootstrap-override {
+    footer {
+        width: 100vw;
+        height: 300px;
+        background-color: $darkGrey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+
+        .content {
+            min-width: 60vw;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            margin-top: 30px;
+
+            p {
+                color: $primaryColor;
+                padding: 10px 150px 10px 100px;
+                font-size: 20px;
+                line-height: 40px;
+                font-family: FactoriaBook;
+            }
+
+            .p__styled {
+                border-right: 2px solid $primaryColor;
+                padding-top: 0px;
+                padding-bottom: 30px;
+            }
+        }
+
+        span {
+            color: $lightGrey;
+            flex-direction: row;
+            font-family: FactoriaBook;
+            font-size: 15px;
+            margin: 80px 0 0 50%;
+            width: 100%;
+
+            a {
+                img {
+                    width: 30px;
+                    text-align: right;
+                    padding: 0 0 0 10px;
+                }
+            }
+
+            .a__styled {
+                margin-left: 25%;
+            }
+        }
+    }
+}
+
+@media (max-width: $md) {
+    #bootstrap-override {
+        footer {
+            min-height: 500px;
+            .content {
+                width: 100vw;
+                flex-direction: column;
+
+                .p__styled, p{
+                    border: none;
+                    padding: 10px;
+                    text-align: left;
+                }
+            }
+
+            span {
+                margin: 150px 0 0 0;
+                text-align: center;
+
+                a {
+                    img {
+                        position: absolute;
+                        bottom: 130px;
+                        left: 55%;
+                    }
+                }
+                .a__styled {
+                    margin-left: 0;
+                    img {
+                        left: 35%;
+                    }
+                }
+            }           
+        }
+    }
+}
