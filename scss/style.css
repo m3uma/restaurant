@@ -1335,6 +1335,190 @@
   }
 }
 
+@font-face {
+  font-family: FactoriaBold;
+  src: url("../fonts/Factoria-Bold.otf");
+}
+
+@font-face {
+  font-family: FactoriaBook;
+  src: url("../fonts/Factoria-Book.otf");
+}
+
+@font-face {
+  font-family: FactoriaMedium;
+  src: url("../fonts/Factoria-Medium.otf");
+}
+
+@font-face {
+  font-family: HanleyRoughScript;
+  src: url("../fonts/HanleyRough-Script.otf");
+}
+
+@font-face {
+  font-family: TrendRoughSansFive;
+  src: url("../fonts/TrendRoughSansFive.otf");
+}
+
+@font-face {
+  font-family: TrendRoughSansOne;
+  src: url("../fonts/TrendRoughSansOne.otf");
+}
+
+#bootstrap-override .contentParties {
+  width: 100vw;
+  min-height: 90vh;
+  height: 100%;
+  background: #1c1c1e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#bootstrap-override .contentParties .partiesInfo {
+  width: 100%;
+  max-width: 35vw;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 150px;
+}
+
+#bootstrap-override .contentParties .partiesInfo h1 {
+  color: white;
+  font-family: TrendRoughSansFive;
+  font-size: 50px;
+  margin-left: 50px;
+}
+
+#bootstrap-override .contentParties .partiesInfo p {
+  max-width: 70%;
+  line-height: 30px;
+  font-family: FactoriaBook;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+#bootstrap-override .contentParties .partiesInfo .mainInfo {
+  color: #9f554a;
+  font-size: 30px;
+}
+
+#bootstrap-override .contentParties .partiesInfo .primaryInfo {
+  color: #666;
+  line-height: 20px;
+  margin-top: 30px;
+}
+
+#bootstrap-override .contentParties form {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 10px;
+}
+
+#bootstrap-override .contentParties form .form__input {
+  background: none;
+  color: #666;
+  padding: 15px 60px 15px 15px;
+  border: 2px solid #666;
+  margin: 10px;
+  width: 100%;
+  max-width: 250px;
+}
+
+#bootstrap-override .contentParties form .form__textarea {
+  max-width: 605px;
+  height: 120px;
+  resize: none;
+}
+
+#bootstrap-override .contentParties form button {
+  color: white;
+  background-color: #666;
+  padding: 10px 20px;
+  float: right;
+  border-radius: 0;
+  margin-right: 13%;
+}
+
+@media (max-width: 1200px) {
+  #bootstrap-override .contentParties form {
+    max-width: 600px;
+  }
+  #bootstrap-override .contentParties form .form__input {
+    max-width: 150px;
+  }
+  #bootstrap-override .contentParties form .form__textarea {
+    max-width: 405px;
+  }
+}
+
+@media (max-width: 992px) {
+  #bootstrap-override .contentParties {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  #bootstrap-override .contentParties .partiesInfo {
+    max-width: 70vw;
+    text-align: left;
+    margin: 100px auto 0;
+  }
+  #bootstrap-override .contentParties .partiesInfo p {
+    max-width: 100%;
+  }
+  #bootstrap-override .contentParties form {
+    max-width: 90vw;
+    text-align: center;
+  }
+  #bootstrap-override .contentParties form .form__input {
+    max-width: 200px;
+  }
+  #bootstrap-override .contentParties form .form__textarea {
+    max-width: 505px;
+  }
+}
+
+@media (max-width: 768px) {
+  #bootstrap-override .contentParties .partiesInfo {
+    max-width: 90vw;
+  }
+  #bootstrap-override .contentParties .partiesInfo h1, #bootstrap-override .contentParties .partiesInfo p {
+    margin-left: 30px;
+  }
+  #bootstrap-override .contentParties form {
+    width: 90vw;
+  }
+  #bootstrap-override .contentParties form .form__input {
+    max-width: 70vw;
+  }
+  #bootstrap-override .contentParties form .form__textarea {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 576px) {
+  #bootstrap-override .contentParties .partiesInfo h1 {
+    font-size: 38px;
+  }
+  #bootstrap-override .contentParties .partiesInfo h1, #bootstrap-override .contentParties .partiesInfo p {
+    margin-left: 10px;
+  }
+  #bootstrap-override .contentParties form .form__input {
+    width: 54vw;
+  }
+  #bootstrap-override .contentParties form .form__textarea {
+    width: 54vw;
+  }
+}
+
 *, *::after, *::before {
   margin: 0;
   padding: 0;

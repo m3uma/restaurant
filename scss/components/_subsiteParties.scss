@@ -1,0 +1,177 @@
+@import '../settings/fonts';
+@import '../settings/variables';
+
+#bootstrap-override {
+    .contentParties {
+        width: 100vw;
+        min-height: 90vh;
+        height: 100%;
+        background: $darkGrey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .partiesInfo {
+            width: 100%;
+            max-width: 35vw;
+            align-self: flex-start;
+            margin-top: 150px;
+
+            h1 {
+                color: $thirdColor;
+                font-family: TrendRoughSansFive;
+                font-size: 50px;
+                margin-left: 50px;
+            }
+
+            p {
+                max-width: 70%;
+                line-height: 30px;
+                font-family: FactoriaBook;
+                margin-left: 50px;
+                margin-top: 20px;
+            }
+
+            .mainInfo{
+                color: $primaryColor;
+                font-size: 30px;    
+            }
+
+            .primaryInfo {
+                color: $lightGrey;
+                line-height: 20px;
+                margin-top: 30px;
+            }
+        }
+
+        form {
+            width: 100%;
+            max-width: 800px;
+            margin-top: 10px;
+
+            .form__input {
+                background: none;
+                color: $lightGrey;
+                padding: 15px 60px 15px 15px;
+                border: 2px solid $lightGrey;
+                margin: 10px;
+                width: 100%;
+                max-width: 250px;
+            }
+
+            .form__textarea {
+                max-width: 605px;
+                height: 120px;
+                resize: none;
+            }
+
+            button {
+                color: $thirdColor;
+                background-color: $lightGrey;
+                padding: 10px 20px;
+                float: right;
+                border-radius: 0;
+                margin-right: 13%;
+            }
+        }
+    }
+}
+
+@media (max-width: $xl) {
+    #bootstrap-override {
+        .contentParties {
+            form {
+                max-width: 600px;
+
+                .form__input {
+                    max-width: 150px;
+                }
+
+                .form__textarea {
+                    max-width: 405px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $lg) {
+    #bootstrap-override {
+        .contentParties {
+            flex-direction: column;
+            text-align: center;
+            
+            .partiesInfo {
+                max-width: 70vw;
+                text-align: left;
+                margin: 100px auto 0;
+    
+                p {
+                    max-width: 100%;
+                }
+            }
+            form {
+                max-width: 90vw;
+                text-align: center;
+
+                .form__input {
+                    max-width: 200px;
+                }
+
+                .form__textarea {
+                    max-width: 505px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $md) {
+    #bootstrap-override {
+        .contentParties {
+            .partiesInfo {
+                max-width: 90vw;
+
+                h1, p {
+                    margin-left: 30px;
+                }
+            }
+
+            form {
+                width: 90vw;
+                .form__input {
+                    max-width: 70vw;
+                }
+
+                .form__textarea{
+                    width: 70vw;
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    #bootstrap-override {
+        .contentParties {
+            .partiesInfo {
+                h1 {
+                    font-size: 38px;
+                }
+                h1, p {
+                    margin-left: 10px;
+                }
+            }
+            form {
+                .form__input {
+                    width: 54vw;
+                }
+
+                .form__textarea{
+                    width: 54vw;
+                }
+            }
+        }
+    }
+}
