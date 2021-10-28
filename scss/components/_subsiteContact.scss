@@ -1,0 +1,143 @@
+@import '../settings/fonts';
+@import '../settings/variables';
+
+#bootstrap-override {
+    .contentContact {
+        width: 100vw;
+        min-height: 70vh;
+        height: 100%;
+        background: $darkGrey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            color: $thirdColor;
+            font-family: TrendRoughSansFive;
+            font-size: 50px;
+            padding: 100px;
+            align-self: flex-start;
+            margin-top: 20px;
+        }
+
+        form {
+            width: 100%;
+            max-width: 800px;
+            margin-top: 10px;
+
+            .form__input {
+                background: none;
+                color: $lightGrey;
+                padding: 15px 60px 15px 15px;
+                border: 2px solid $lightGrey;
+                margin: 10px;
+                width: 100%;
+                max-width: 250px;
+            }
+
+            .form__textarea {
+                max-width: 605px;
+                height: 120px;
+                resize: none;
+            }
+
+            button {
+                color: $thirdColor;
+                background-color: $lightGrey;
+                padding: 10px 20px;
+                float: right;
+                border-radius: 0;
+                margin-right: 13%;
+            }
+        }
+    }
+}
+
+@media (max-width: $xl) {
+    #bootstrap-override {
+        .contentContact {
+            form {
+                max-width: 600px;
+
+                .form__input {
+                    max-width: 150px;
+                }
+
+                .form__textarea {
+                    max-width: 405px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $lg) {
+    #bootstrap-override {
+        .contentContact {
+            flex-direction: column;
+            text-align: center;
+
+            h1 {
+                padding: 20px 15%;
+
+                br {
+                    display: none;
+                }
+            }
+            form {
+                max-width: 90vw;
+                text-align: center;
+
+                .form__input {
+                    max-width: 200px;
+                }
+
+                .form__textarea {
+                    max-width: 505px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $md) {
+    #bootstrap-override {
+        .contentContact {
+            h1 {
+                margin-top: 100px;
+            }
+            form {
+                width: 90vw;
+                .form__input {
+                    width: 70vw;
+                }
+
+                .form__textarea{
+                    width: 54vw;
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    #bootstrap-override {
+        .contentContact {
+            h1 {
+                margin-top: 100px;
+                padding: 20px;
+                font-size: 40px;
+            }
+            form {
+                .form__input {
+                    width: 54vw;
+                }
+
+                .form__textarea{
+                    width: 54vw;
+                }
+            }
+        }
+    }
+}
