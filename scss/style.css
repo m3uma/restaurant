@@ -78,6 +78,11 @@
   color: white;
 }
 
+#bootstrap-override .navbar .active .nav-link {
+  color: white;
+  cursor: default;
+}
+
 @media (max-width: 992px) {
   #bootstrap-override .navbar {
     padding-bottom: 20px;

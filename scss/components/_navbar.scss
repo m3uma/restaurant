@@ -18,6 +18,13 @@
                 color: $thirdColor;
             }
         }
+
+        .active {
+            .nav-link {
+                color: $thirdColor;
+                cursor: default;
+            }
+        }
     }
 }
 
