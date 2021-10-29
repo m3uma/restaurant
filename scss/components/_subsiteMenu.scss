@@ -56,8 +56,138 @@
                 .menu_item_info--red {
                     color: $primaryColor;
                 }
+            }
+            
+            .menu_img--speciality {
+                .specialty-pizzas-mobile {
+                    display: none;
+                }
 
-            } 
+                .specialty-pizzas {    
+                    width: 100%;
+                }
+            }
+
+            .menu_items-pizza {
+                background-color: $grey;
+                min-height: 600px;
+
+                .menu_item_info {
+                    color: $primaryColor;
+                    margin-left: 5%;
+                    padding: 50px 0;
+                }
+                .col-lg-4 {
+                    padding: 0;
+                    flex-direction: row;
+                    p {
+                        color: $thirdColor;
+                        margin-left: 20%;
+                        line-height: 23px;
+                        margin-right: 50px;
+                        width: 60%;
+                    }
+                    .menu_item_name {
+                        font-size: 22px;
+                        margin: 0;
+                        margin-left: 20%;
+                    }
+    
+                    .menu_item_content {
+                        font-family: FactoriaBook;
+                        margin-bottom: 10px;
+                        font-size: 17px;
+                    }
+                }
+            }
+
+            .menu_items-pizza-add {
+                width: 100%;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-self: center;
+                margin: 0 auto;
+                background-color: $grey;
+
+                p {
+                    line-height: 23px;
+                    margin: 0;
+                }
+
+                .menu_item_info {
+                    color: $thirdColor;
+                    font-size: 20px;
+                    margin-top: 50px;
+                }
+
+                .menu_item_info-add {
+                    color: $lightGrey;
+                    font-family: FactoriaBook;
+                }
+
+                .menu_item_info-end {
+                    color: $lightGrey;
+                    font-size: 20px;
+                    margin: 50px 0;
+                }
+
+                .col-lg-4 {
+                    padding: 0 3%;
+                    flex-direction: row;
+                    text-align: left;
+                    width: 25%;
+
+                    p {
+                        line-height: 23px;
+                        margin: 0;
+                    }
+
+                    .menu_item_name {
+                        font-size: 22px;
+                        margin: 0;
+                        padding-top: 50px;
+                        color: $lightGrey;
+                        padding-bottom: 20px;
+                    }
+
+                    .col-lg-2 {
+                        padding: 0 2%;
+                        flex-direction: column;
+                        width: 45%;
+                        float: left;
+
+                        .menu_item_content {
+                            color: $thirdColor;
+                            font-size: 17px;
+                        }
+                    }
+                    
+                    .pizza-border {
+                        border-right: 2px solid $lightGrey;
+                    }
+                    
+                }  
+            }
+
+            .menu_items_sides {
+                min-height: 400px;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+
+                p {
+                    font-size: 22px;
+                    margin: 0;
+                    color: $thirdColor;
+                    padding: 0 20px 15px;
+                    width: 80%;
+                    text-align: center;
+                    line-height: 23px;
+                }
+            }
         }
 
         .menu_position--light {
@@ -66,6 +196,28 @@
     
         .menu_position--first {
             margin-top: 100px;
+        }
+
+        .headerpizza {
+            background-color: $lightGrey;
+            width: 100vw;
+            height: 120px;
+            text-align: center;
+
+            h1 {
+                color: $thirdColor;
+                font-family: HanleyRoughScript;
+                padding-top: 35px;
+                font-size: 50px;
+            }
+        }
+
+        .headerpizza--sides {
+            background-color: $primaryColor;
+
+            h1 {
+                font-family: TrendRoughSansFive;
+            }
         }
     }   
 }
@@ -85,6 +237,65 @@
                         margin-left: 30px;
                         margin-right: 20px;
                     }
+                }
+
+                .menu_img--speciality {
+                    .specialty-pizzas-mobile {
+                        display: block;
+                        width: 100vw;
+                    }
+
+                    .specialty-pizzas {
+                        display: none;
+                    }
+                }
+
+                .menu_items-pizza { 
+                    .menu_item_info {
+                        padding: 30px 0;
+                    }
+
+                    .col-lg-4 { 
+                        p, .menu_item_name {
+                            margin-left: 30px;
+                            margin-right: 20px;
+                            width: 90%;
+                        }
+                    }
+                }
+
+                .menu_items-pizza-add {
+                    .col-lg-4 {
+                        width: 100%;
+                        padding: 0 5%;
+
+                        .menu_item_name {
+                            margin-left: 20px;
+                        }
+
+                        .pizza-border {
+                            border:none
+                        }
+                    }
+
+                    
+                }
+            }
+
+            .headerpizza { 
+                height: 200px;
+
+                h1 {
+                    font-size: 40px;
+                    padding-top: 45px;
+                }
+            }
+
+            .headerpizza--sides {
+                height: 120px;
+
+                h1 {
+                    padding-top: 35px;
                 }
             }
         }
