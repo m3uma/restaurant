@@ -1,0 +1,92 @@
+@import '../settings/fonts';
+@import '../settings/variables';
+
+#bootstrap-override {
+    .menuContent {
+        width: 100vw;
+        min-height: 100vh;
+        height: 100%;
+        background: $darkGrey;
+        position: relative;
+
+        .menu_position {
+            .menu_img {
+                padding: 0;
+                height: 100%;
+                min-height: 400px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    max-height: 100vh;
+                }
+            }
+
+            .menu_items {
+                margin: 0;
+                height: 100%;
+                min-height: 400px;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                margin-top: 10%;
+                
+                p {
+                    color: $thirdColor;
+                    margin-left: 20%;
+                    line-height: 23px;
+                    margin-right: 50px;
+                }
+                .menu_item_name {
+                    font-size: 22px;
+                    margin: 0;
+                    margin-left: 20%;
+                }
+
+                .menu_item_content {
+                    font-family: FactoriaBook;
+                    margin-bottom: 10px;
+                    font-size: 17px;
+                }
+
+                .menu_item_info {
+                    color: $lightGrey;
+                }
+
+                .menu_item_info--red {
+                    color: $primaryColor;
+                }
+
+            } 
+        }
+
+        .menu_position--light {
+            background-color: $grey;
+        }
+    
+        .menu_position--first {
+            margin-top: 100px;
+        }
+    }   
+}
+
+@media (max-width: $lg) {
+    #bootstrap-override {
+        .menuContent {
+            .menu_position--first {
+                margin-top: 50px;
+            }
+
+            .menu_position {
+                .menu_items {
+                    min-height: 500px;
+
+                    p, .menu_item_name {
+                        margin-left: 30px;
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
